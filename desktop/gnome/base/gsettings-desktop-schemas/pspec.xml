@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!DOCTYPE INARY SYSTEM "https://raw.githubusercontent.com/Zaryob/inary/master/inary-spec.dtd">
+<INARY>
+    <Source>
+        <Name>gsettings-desktop-schemas</Name>
+        <Homepage>http://www.gnome.org/</Homepage>
+        <Packager>
+            <Name>Süleyman Poyraz</Name>
+            <Email>zaryob.dev@gmail.com</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <Isa>data</Isa>
+        <PartOf>desktop.gnome.base</PartOf>
+        <Summary>Collection of GSettings schemas for GNOME desktop</Summary>
+        <Description>Gsettings-desktop-schemas contains a collection of GSettings schemas for settings shared by various components of a desktop.</Description>
+        <Archive sha1sum="628a2d779ff1cce0574febeff5cfed165de231e5" type="tarxz">http://ftp.acc.umu.se/pub/GNOME/sources/gsettings-desktop-schemas/3.32/gsettings-desktop-schemas-3.32.0.tar.xz</Archive>
+    </Source>
+
+    <Package>
+        <Name>gsettings-desktop-schemas</Name>
+        <Files>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/usr/lib/girepository-1.0/GDesktopEnums-3.0.typelib</Path>
+        </Files>
+    </Package>
+
+    <Package>
+        <Name>gsettings-desktop-schemas-devel</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">gsettings-desktop-schemas</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="data">/usr/share/pkgconfig/</Path>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2019-09-15</Date>
+            <Version>3.32.0</Version>
+            <Comment>First release</Comment>
+            <Name>Süleyman Poyraz</Name>
+            <Email>zaryob.dev@gmail.com</Email>
+        </Update>
+    </History>
+</INARY>
